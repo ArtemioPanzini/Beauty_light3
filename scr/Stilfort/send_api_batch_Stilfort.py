@@ -2,7 +2,6 @@ import requests
 import json
 import threading
 import time
-import re
 from scr.Stilfort import xml_to_dict_Stilfort
 from logs import log_file_generator
 common_logger = log_file_generator.common_logger
