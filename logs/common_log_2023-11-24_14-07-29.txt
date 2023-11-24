@@ -1,3 +1,0 @@
-2023-11-24 14:07:29 - INFO: Это сообщение будет записано в общий лог-файл
-2023-11-24 14:07:51 - INFO: Файл скачан и сохранен в C:\Users\LENOVO\ArtemioPanzini\yandex_manager_stocks\modules\Beauty_light3\scr\Artelamp\../../data/Artelamp.xml
-2023-11-24 14:07:51 - INFO: Ошибка [Errno 2] No such file or directory: 'C:\\Users\\LENOVO\\ArtemioPanzini\\yandex_manager_stocks\\modules\\Beauty_light3\\scr\\Artelamp\\../../data/Artelamp/Artelamp.xml'

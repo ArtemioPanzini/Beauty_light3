@@ -1,3 +1,0 @@
-2023-11-24 14:45:48 - INFO: Это сообщение будет записано в общий лог-файл
-2023-11-24 14:45:48 - INFO: Файл удален: C:\Users\LENOVO\ArtemioPanzini\yandex_manager_stocks\modules\Beauty_light3\scr\Artelamp\../../data/Artelamp.xml
-2023-11-24 14:45:49 - INFO: Файл удален: C:\Users\LENOVO\ArtemioPanzini\yandex_manager_stocks\modules\Nebesniy_svet\scr\Artelamp\../../data/Artelamp.xml
