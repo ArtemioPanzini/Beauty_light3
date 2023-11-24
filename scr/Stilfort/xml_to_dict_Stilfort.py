@@ -1,7 +1,7 @@
 import xml.etree.ElementTree as ET
 import os
 from datetime import datetime
-from logs import log_file_generator
+from modules.Beauty_light3.logs import log_file_generator
 
 common_logger = log_file_generator.common_logger
 
@@ -49,7 +49,8 @@ def main():
             if article.lower() not in list_undebug_correct and article.upper() not in list_undebug_correct:
                 continue
 
-            article = article.lower()
+            if article.upper() not in list_undebug_correct:
+                article = article.lower()
 
             overleft = 0
             param_element = offer_element.find('.//param[@name="Остатки"]')
@@ -70,7 +71,7 @@ def main():
 
             stocks_data = {
                 "sku": f"{article}",
-                "warehouseId": 698807,
+                "warehouseId": 790859,
                 "items": [
                     {
                         "count": overleft,

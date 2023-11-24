@@ -2,13 +2,14 @@ import requests
 import json
 import threading
 import time
-from scr.Stilfort import xml_to_dict_Stilfort
-from logs import log_file_generator
+from modules.Beauty_light3.scr.Stilfort import xml_to_dict_Stilfort
+from modules.Beauty_light3.logs import log_file_generator
+import config
 common_logger = log_file_generator.common_logger
 
 
 def send_data_batch_stock(stocks_data, shop_name, warehouse_api_id):
-    headers_oauth = {"Authorization": "Bearer y0_AgAAAABW45BlAApomAAAAADrXWqYcge3WjPZQj2l-zlBmGYZGZAehy0"}
+    headers_oauth = config.headers
 
     base_url = f"https://api.partner.market.yandex.ru/campaigns/{warehouse_api_id}/offers/stocks"
 
@@ -42,7 +43,7 @@ def main():
     stocks_data_stilfort = xml_to_dict_Stilfort.main()
     print(f'Остатки Stilfort: {len(stocks_data_stilfort)}')
     thread_stocks_stilfort = threading.Thread(target=send_data_batch_stock, args=(stocks_data_stilfort, "Stilfort",
-                                                                                  62747703))
+                                                                                  70946222))
     thread_stocks_stilfort.start()
 
     thread_stocks_stilfort.join()

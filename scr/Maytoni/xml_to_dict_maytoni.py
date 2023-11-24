@@ -1,10 +1,7 @@
 import xml.etree.ElementTree as ET
 import os
 from datetime import datetime
-from datetime import time
-from datetime import date
-
-from logs import log_file_generator
+from modules.Beauty_light3.logs import log_file_generator
 
 common_logger = log_file_generator.common_logger
 
@@ -57,7 +54,7 @@ def main():
                 if overleft_wo_round == "-1":
                     overleft = 0
                 overleft = round(float(overleft_wo_round))
-                if overleft == 1 or overleft == 2 or overleft == 3 or overleft == 4:
+                if overleft in (1, 2, 3, 4):
                     overleft = 0
             except Exception as e:
                 common_logger.info(f'Ошибка {e} во время разбора {article}')
@@ -67,7 +64,7 @@ def main():
 
             stock_data = {
                 "sku": f"{article}",
-                "warehouseId": 698807,
+                "warehouseId": 790859,
                 "items": [
                     {
                         "count": overleft,

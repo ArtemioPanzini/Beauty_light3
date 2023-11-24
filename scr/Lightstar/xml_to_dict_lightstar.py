@@ -2,7 +2,7 @@ import xml.etree.ElementTree as ET
 import os
 from datetime import datetime
 
-from logs import log_file_generator
+from modules.Beauty_light3.logs import log_file_generator
 
 common_logger = log_file_generator.common_logger
 
@@ -45,7 +45,6 @@ def main():
             if article not in list_undebug_correct:
                 continue
 
-                # Остатки, не работают
             overleft = 0
 
             try:
@@ -55,14 +54,14 @@ def main():
                 else:
                     overleft = 0
 
-                if overleft == 1 or overleft == 2 or overleft == 3:
+                if overleft in (1, 2, 3, 4):
                     overleft = 0
             except Exception as e:
                 common_logger.info(f'Ошибка {e} во время разбора {article}')
 
             stocks_data = {
                 "sku": f"{article}",
-                "warehouseId": 698807,
+                "warehouseId": 790859,
                 "items": [
                     {
                         "count": overleft,

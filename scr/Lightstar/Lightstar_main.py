@@ -1,10 +1,5 @@
-import os
-import sys
-from scr.Lightstar import download_xml_lightstar
-from scr.Lightstar import send_api_batch_lightstar
-
-#  Добавляем корневую папку main для path append
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '.')) )
+from modules.Beauty_light3.scr.Lightstar import download_xml_lightstar
+from modules.Beauty_light3.scr.Lightstar import send_api_batch_lightstar
 
 
 def main():

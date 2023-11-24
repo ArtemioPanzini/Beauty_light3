@@ -1,0 +1,2 @@
+2023-11-24 14:10:42 - INFO: Это сообщение будет записано в общий лог-файл
+2023-11-24 14:10:42 - INFO: Ошибка [Errno 2] No such file or directory: 'C:\\Users\\LENOVO\\ArtemioPanzini\\yandex_manager_stocks\\modules\\Beauty_light3\\scr\\Artelamp\\../../data/Artelamp/Artelamp.xml'

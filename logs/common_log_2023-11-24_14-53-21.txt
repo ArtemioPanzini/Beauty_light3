@@ -1,0 +1,117 @@
+2023-11-24 14:53:21 - INFO: Это сообщение будет записано в общий лог-файл
+2023-11-24 14:53:53 - INFO: Файл скачан и сохранен в C:\Users\LENOVO\ArtemioPanzini\yandex_manager_stocks\modules\Nebesniy_svet\scr\Artelamp\../../data/Artelamp.xml
+2023-11-24 14:54:14 - INFO: Файл скачан и сохранен в C:\Users\LENOVO\ArtemioPanzini\yandex_manager_stocks\modules\Beauty_light3\scr\Artelamp\../../data/Artelamp.xml
+2023-11-24 14:56:27 - INFO: Файл скачан и сохранен в C:\Users\LENOVO\ArtemioPanzini\yandex_manager_stocks\modules\Nebesniy_svet\scr\Maytoni\../../data/Maytoni/Maytoni.yml
+2023-11-24 14:56:45 - INFO: Файл скачан и сохранен в C:\Users\LENOVO\ArtemioPanzini\yandex_manager_stocks\modules\Beauty_light3\scr\Maytoni\../../data/Maytoni/Maytoni.yml
+2023-11-24 14:58:07 - INFO: Файл скачан и сохранен в C:\Users\LENOVO\ArtemioPanzini\yandex_manager_stocks\modules\Beauty_light3\scr\Lightstar\../../data/LightStar/LightStar.yml
+2023-11-24 14:58:48 - INFO: Файл скачан и сохранен в C:\Users\LENOVO\ArtemioPanzini\yandex_manager_stocks\modules\Nebesniy_svet\scr\Lightstar\../../data/LightStar/LightStar.yml
+2023-11-24 14:58:49 - INFO: {
+  "errors": [
+    {
+      "code": "FORBIDDEN",
+      "message": "Access denied"
+    }
+  ],
+  "status": "ERROR"
+}
+2023-11-24 14:58:50 - INFO: {
+  "errors": [
+    {
+      "code": "FORBIDDEN",
+      "message": "Access denied"
+    }
+  ],
+  "status": "ERROR"
+}
+2023-11-24 14:58:50 - INFO: {
+  "errors": [
+    {
+      "code": "FORBIDDEN",
+      "message": "Access denied"
+    }
+  ],
+  "status": "ERROR"
+}
+2023-11-24 14:58:51 - INFO: {
+  "errors": [
+    {
+      "code": "FORBIDDEN",
+      "message": "Access denied"
+    }
+  ],
+  "status": "ERROR"
+}
+2023-11-24 14:58:51 - INFO: {
+  "errors": [
+    {
+      "code": "FORBIDDEN",
+      "message": "Access denied"
+    }
+  ],
+  "status": "ERROR"
+}
+2023-11-24 14:58:52 - INFO: {
+  "errors": [
+    {
+      "code": "FORBIDDEN",
+      "message": "Access denied"
+    }
+  ],
+  "status": "ERROR"
+}
+2023-11-24 14:58:52 - INFO: {
+  "errors": [
+    {
+      "code": "FORBIDDEN",
+      "message": "Access denied"
+    }
+  ],
+  "status": "ERROR"
+}
+2023-11-24 14:58:52 - INFO: {
+  "errors": [
+    {
+      "code": "FORBIDDEN",
+      "message": "Access denied"
+    }
+  ],
+  "status": "ERROR"
+}
+2023-11-24 14:58:53 - INFO: {
+  "errors": [
+    {
+      "code": "FORBIDDEN",
+      "message": "Access denied"
+    }
+  ],
+  "status": "ERROR"
+}
+2023-11-24 14:58:53 - INFO: {
+  "errors": [
+    {
+      "code": "FORBIDDEN",
+      "message": "Access denied"
+    }
+  ],
+  "status": "ERROR"
+}
+2023-11-24 14:58:54 - INFO: {
+  "errors": [
+    {
+      "code": "FORBIDDEN",
+      "message": "Access denied"
+    }
+  ],
+  "status": "ERROR"
+}
+2023-11-24 14:58:54 - INFO: {
+  "errors": [
+    {
+      "code": "FORBIDDEN",
+      "message": "Access denied"
+    }
+  ],
+  "status": "ERROR"
+}
+2023-11-24 14:59:16 - INFO: Файл скачан и сохранен в C:\Users\LENOVO\ArtemioPanzini\yandex_manager_stocks\modules\Beauty_light3\scr\Stilfort\../../data/Stilfort/Stilfort.xml
+2023-11-24 15:00:01 - INFO: Файл скачан и сохранен в C:\Users\LENOVO\ArtemioPanzini\yandex_manager_stocks\modules\Nebesniy_svet\scr\Stilfort\../../data/Stilfort/Stilfort.xml

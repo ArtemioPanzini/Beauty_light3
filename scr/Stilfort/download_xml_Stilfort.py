@@ -1,9 +1,9 @@
 import requests
 import os
 import shutil
-from datetime import datetime 
+from datetime import datetime
+from modules.Beauty_light3.logs import log_file_generator
 
-from logs import log_file_generator
 common_logger = log_file_generator.common_logger
 
 

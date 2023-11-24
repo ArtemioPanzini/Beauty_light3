@@ -5,6 +5,7 @@ import json
 import threading
 import os
 from datetime import datetime
+import config
 
 
 def read_txt_to_list(file_path):
@@ -19,7 +20,7 @@ def read_txt_to_list(file_path):
 
 
 def send_data_batch_stock(stocks_data, headers_oauth):
-    base_url = "https://api.partner.market.yandex.ru/campaigns/62747703/offers/stocks"
+    base_url = "https://api.partner.market.yandex.ru/campaigns/70946222/offers/stocks"
 
     batch_size = 500
     for i in range(0, len(stocks_data), batch_size):
@@ -65,12 +66,12 @@ def main():
                 continue
 
             stock = item.find("stock").text
-            if stock == '1' or stock == '-1' or stock == '2' or stock == '3' or stock == '4':
+            if stock in ('1', '-1', '2', '3', '4'):
                 stock = 0
 
             stock_data = {
                 "sku": f"{article}",
-                "warehouseId": 698807,
+                "warehouseId": 790859,
                 "items": [
                     {
                         "count": stock,
@@ -82,7 +83,7 @@ def main():
             stocks_data.append(stock_data)
 
     # Отображаем общее количество элементов для отправки
-    headers_oauth = {"Authorization": "Bearer y0_AgAAAABW45BlAApomAAAAADrXWqYcge3WjPZQj2l-zlBmGYZGZAehy0"}
+    headers_oauth = config.headers
     thread_stocks = threading.Thread(target=send_data_batch_stock, args=(stocks_data, headers_oauth))
 
     thread_stocks.start()

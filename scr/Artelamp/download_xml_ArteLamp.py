@@ -1,6 +1,6 @@
 import requests
 import os
-from logs import log_file_generator
+from modules.Nebesniy_svet.logs import log_file_generator
 common_logger = log_file_generator.common_logger
 
 
@@ -32,7 +32,7 @@ def main():
     script_directory = os.path.dirname(__file__)
 
     # Папка для сохранения загруженных файлов
-    download_folder = os.path.join(script_directory,'../../data/Artelamp')
+    download_folder = os.path.join(script_directory, '../../data/')
     
     # Имя файла из URL
     file_name = 'Artelamp.xml'

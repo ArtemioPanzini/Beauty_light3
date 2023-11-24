@@ -1,6 +1,6 @@
 import requests
 import os
-from logs import log_file_generator
+from modules.Beauty_light3.logs import log_file_generator
 common_logger = log_file_generator.common_logger
 
 
@@ -42,3 +42,7 @@ def main():
 
     delete_file_if_exist(file_path)
     download_file(file_url, file_path)
+
+
+if __name__ == '__main__':
+    main()

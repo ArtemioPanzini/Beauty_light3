@@ -5,6 +5,7 @@ import json
 import threading
 import os
 from datetime import datetime
+import config
 
 
 def read_txt_to_list(file_path):
@@ -19,7 +20,7 @@ def read_txt_to_list(file_path):
 
 
 def send_data_batch_stock(stocks_data, headers_oauth):
-    base_url = "https://api.partner.market.yandex.ru/campaigns/62747703/offers/stocks"
+    base_url = "https://api.partner.market.yandex.ru/campaigns/70946222/offers/stocks"
 
     batch_size = 500
     for i in range(0, len(stocks_data), batch_size):
@@ -65,7 +66,7 @@ def main():
                 continue
 
             stock = item.find("Остаток").text if item.find("Остаток") is not None else None
-            if stock == '1' or stock == '-1' or stock == '2' or stock == '3' or stock == '4':
+            if stock in ('1', '-1', '2', '3', '4'):
                 stock = 0
             elif stock == 'более 10':
                 stock = 11
@@ -76,7 +77,7 @@ def main():
 
             stock_data = {
                 "sku": f"{article}",
-                "warehouseId": 698807,
+                "warehouseId": 790859,
                 "items": [
                     {
                         "count": stock,

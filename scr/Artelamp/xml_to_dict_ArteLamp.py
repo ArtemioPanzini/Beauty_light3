@@ -1,8 +1,7 @@
 import xml.etree.ElementTree as ET
 import os
 from datetime import datetime
-from logs import log_file_generator
-
+from modules.Beauty_light3.logs import log_file_generator
 common_logger = log_file_generator.common_logger
 
 
@@ -19,7 +18,7 @@ def read_txt_to_list(file_path):
 
 def main():
     script_directory = os.path.dirname(__file__)
-    download_folder = os.path.join(script_directory, '../../data/Artelamp/')
+    download_folder = os.path.join(script_directory, '../../data/')
     file_path = os.path.join(download_folder, 'Artelamp.xml')
     xml_file_path = file_path
 
@@ -52,15 +51,15 @@ def main():
             if outlet_element is not None:
                 try:
                     overleft = round(float(outlet_element))
-                    if overleft == 1 or overleft == 2 or overleft == 3 or overleft == 4:
+                    if overleft in (1, 2, 3, 4):
                         overleft = 0
                 except Exception as e:
-                    pass
                     common_logger.info(f'Ошибка {e} во время разбора {article}')
+                    pass
 
             stocks_data = {
                 "sku": f"{article}",
-                "warehouseId": 698807,
+                "warehouseId": 790859,
                 "items": [
                     {
                         "count": overleft,
@@ -76,7 +75,3 @@ def main():
     except Exception as e:
         common_logger.info(f'Ошибка {e}')
         pass
-
-
-if __name__ == "__main__":
-    main()
