@@ -125,7 +125,7 @@ async def main():
         time.sleep(60)
 
     time_interval1_start = time_now(9, 45)
-    time_interval1_end = time_now(20, 00)
+    time_interval1_end = time_now(10, 00)
     current_time = datetime.now().time()
 
     if time_interval1_start <= current_time <= time_interval1_end:
