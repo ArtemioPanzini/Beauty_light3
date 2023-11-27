@@ -26,7 +26,7 @@ class MessageHandler:
 
         self.user_data = {
             'Рома': {'user_name': 'Рома', 'user_id': 328128719},
-            'Рома2': {'user_name': 'Аваг', 'user_id': 5724702406},
+            'Арен': {'user_name': 'Аваг', 'user_id': 1454597584},
             'Артем': {'user_name': 'Артем', 'user_id': 312956486}
         }
 
@@ -142,7 +142,7 @@ async def main():
 
     # Проверяем, находится ли текущее время в интервале 9:45 - 10:00
     if time_interval1_start <= current_time <= time_interval1_end:
-        message_dict = await message_handler.make_message_for_tg(message_handler.list_success_for_telegram, 'Рома2')
+        message_dict = await message_handler.make_message_for_tg(message_handler.list_success_for_telegram, 'Арен')
 
         await send_messages_to_users(message_dict)
     else:
